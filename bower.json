@@ -1,0 +1,21 @@
+{
+  "name": "birthday",
+  "version": "0.1.0",
+  "authors": [
+    "Tychio <code@tychio.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {
+    "interact": "~1.2.4"
+  }
+}
