@@ -1,4 +1,10 @@
- #tridiv {
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#tridiv {
   cursor: move;
   perspective: 800px;
   position: absolute;
