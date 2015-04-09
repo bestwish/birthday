@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <video style="display: none" controls="" autoplay="" name="media">
+    <source src="http://localhost:8000/music.mp3" type="audio/mp3">
+    <source src="http://localhost:8000/music.ogg" type="audio/ogg">
+    <source src="http://localhost:8000/music.m4r" type="audio/m4r">
+  </video>
 	<div id="tridiv">
   <div class="scene" data-x="0" data-y="50" style="-webkit-transform:rotateX(-50deg) rotateY(0deg); -moz-transform:rotateX(-50deg) rotateY(0deg); -ms-transform:rotateX(-50deg) rotateY(0deg); transform:rotateX(-50deg) rotateY(0deg); ">
     <div class="shape cylinder-1 cyl-1">
@@ -50,9 +55,10 @@
     </div>
   </div>
 </div>
-<embed src="http://www.xiami.com/widget/0_189875,_360_260_CD5C5C_808080_1/multiPlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<div id="music"></div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/interact/interact.min.js"></script>
+<script src="bower_components/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

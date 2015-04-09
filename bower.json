@@ -16,6 +16,7 @@
     "jquery": "~1.11.0"
   },
   "devDependencies": {
-    "interact": "~1.2.4"
+    "interact": "~1.2.4",
+    "jplayer": "~2.9.2"
   }
 }

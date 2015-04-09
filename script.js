@@ -8,7 +8,7 @@ interact('#tridiv').draggable({
     $('#tridiv .scene').attr('style', _style(x, y));
   }
 });
-console.log(_style(40,10));
+
 function _style (x, y) {
   return ['-webkit-', '-moz-', '-ms-', '-o-', ' ', ''].join(_rotate(x, y));
 }
@@ -16,3 +16,16 @@ function _style (x, y) {
 function _rotate (y, x) {
   return "transform:rotateX(" + (-x) + "deg) rotateY(" + y + "deg);"
 }
+
+$(function() {
+  $("#music").jPlayer( {
+    ready: function () {
+      $(this).jPlayer("setMedia", {
+        ogv: "music.ogg",
+        m4a: "music.m4a",
+        mp3: "music.mp3"
+      }).jPlayer("play");
+    },
+    swfPath: "bower_components/jplayer/dist/jplayer/jquery.jplayer.swf"
+  });
+});
